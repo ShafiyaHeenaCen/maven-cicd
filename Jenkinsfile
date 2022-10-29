@@ -1,10 +1,10 @@
-def JAVA_HOME
+
 pipeline{
 
     agent any
     
        environment {
-       JAVA_HOME = '/Library/Java/JavaVirtualMachines/jdk-11.0.14.jdk/Contents/Home'                               //can be used in whole pipeline
+       def JAVA_HOME = '/Library/Java/JavaVirtualMachines/jdk-11.0.14.jdk/Contents/Home'                               //can be used in whole pipeline
    }
 
     tools {
