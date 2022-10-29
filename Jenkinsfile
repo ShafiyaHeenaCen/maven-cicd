@@ -17,7 +17,7 @@ pipeline{
             steps{
 
                 script {
-                    echo $JAVA_HOME
+                    echo ${env.JAVA_HOME}
                     sh 'mvn clean package'
                 }
             }
