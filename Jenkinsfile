@@ -1,3 +1,4 @@
+def JAVA_HOME
 pipeline{
 
     agent any
@@ -21,7 +22,7 @@ pipeline{
             steps{
 
                 script {
-                    echo ${env.JAVA_HOME}
+                    echo JAVA_HOME
                     sh 'mvn clean package'
                 }
             }
