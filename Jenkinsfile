@@ -23,7 +23,7 @@ pipeline{
 
                 script {
                     echo JAVA_HOME
-                    sh 'mvn clean package'
+                    sh 'mvn -version'
                 }
             }
             
