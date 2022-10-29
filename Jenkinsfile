@@ -14,9 +14,14 @@ pipeline{
             }
         }
         stage('build'){
-            steps
-			
-               sh 'mvn package'
+            steps{
+
+                script {
+
+                    sh 'mvn package'
+                }
+            }
+            
             }
         }
-    }
+}
